@@ -529,20 +529,73 @@ footer img {
 }
 
 /* Quienes Somos */
-.somos h2 {
+.main-quienes {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+}
+
+.h2-quienes {
+  display: grid;
+  grid-column: 1/2;
+  grid-row: 1/2;
   margin-top: 10px;
+  margin-left: 10px;
   color: brown;
   font-weight: bold;
 }
 
-.container1 {
-  margin: 10px;
+.section-quienes {
+  grid-column: 1/2;
+  grid-row: 2/3;
 }
 
-.container2 {
-  margin: 10px;
+.aside-quienes {
+  grid-column: 2/3;
+  grid-row: 1/4;
 }
 
+.item-quienes {
+  display: flex;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 10px;
+  margin-left: 10px;
+  padding: 10px;
+}
+
+@media screen and (max-width: 660px) {
+  .main-quienes {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .h2-quienes {
+    grid-row: auto;
+    text-align: center;
+  }
+  .aside-quienes {
+    grid-row: auto;
+  }
+  .section-quienes {
+    grid-row: auto;
+  }
+}
+@media screen and (min-width: 660px) and (max-width: 1000px) {
+  .main-quienes {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+  .h2-quienes {
+    grid-row: auto;
+    text-align: center;
+  }
+  .aside-quienes {
+    grid-row: auto;
+  }
+  .section-quienes {
+    grid-row: auto;
+  }
+}
 /* Webinars */
 .section-webinars {
   padding: 10px;
